@@ -4,8 +4,8 @@ import Card from "./components/card";
 
 export default function App() {
     const[cartCount, setCartCount] = useState(0);
-    function handleAddToCart() {
-        setCartCount(cartCount + 1);
+    function handleAddToCart(qty) {
+        setCartCount(cartCount + qty);
     }
 
   return (
