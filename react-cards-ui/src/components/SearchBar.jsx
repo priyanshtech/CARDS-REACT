@@ -1,6 +1,11 @@
 import React from "react";
+import { useContext } from "react";
+import { proplelo } from "../context/Context";
 
-export default function SearchBar({ query, onQueryChange }) {
+export default function SearchBar() {
+  const {query,setQuery}=useContext(proplelo)
+
+
     function handleInputChange(event) {
   onQueryChange(event.target.value);
 }
